@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Crie um array com 101 posições. Cada elemento deve conter o quadrado de seu índice.
+    Ou seja: 0, 1, 4, 9, 16, 25, 36, ..., 10000
+    
+    
+    Exiba eles de uma maneira organizada:
+    Posição 0 = 0
+    Posição 1 = 1
+    Posição 2 = 4
+    Posição 3 = 9
+    Posição 4 = 16 -->
+    
+<script>
+
+var num1 = new Array(101);
+
+for(count=0; count<num1.length ; count++)
+num1[count] = count * count;
+
+for(count=0 ; count<num1.length ; count++)
+document.write("Posição "+count+" : "+num1[count]+"<br />");
+
+</script>
+
+
+
+</body>
+</html>
