@@ -21,8 +21,32 @@
 
 <script>
     
-    var = [A,b,B,C,c,1, 2, 3]
-    
+    var S = ["A","b","B","C","c",1, 2, 3];
+
+document.write("S= [", S ,"]<br>");
+
+S.unshift("a"); // insere no começo do vetor
+document.write("S= [", S ,"]<br>");
+
+S.push("4"); // insere no final do vetor
+document.write("S= [", S ,"]<br>");
+
+for(i=0;i<S.length;i++){ // retira o item, que nesse caso, é o de posição 5 (c)
+    for(i in S){
+        if(i>4)
+        S[i] = S[parseInt(i) + 1]
+    }
+}
+S.pop() // remove o ultimo item
+document.write("S= [", S ,"]<br>");
+
+S.shift(); // remove o primeiro item
+document.write("S= [", S ,"]<br>");
+
+S.pop() // remove o ultimo item
+document.write("S= [", S ,"]");
+
+
 
 </script>
 
