@@ -17,23 +17,22 @@
 
     <script type="text/javascript">
 
-    var salario_atual = prompt("Digite o salário do funcionário")
-    var classe = prompt("Digite o plano de trabalho A, B ou C")
-
-    switch(salario) {
-        case "A":
-            document.write(salario_atual + "plano a");
-            break;
-        case "B":
-            document.write(salario_atual + "plano b");
-            break;
-        case "C":
-            document.write(salario_atual + "plano c");
-            break;
-        default
-        document.write("digite um valor válido");
-
-    }
+var salario = prompt("Digite o salario do funcionário");
+var plano = prompt("Qual o plano do funcioário (A, B ou C)");
+switch(plano){
+    case "A":
+    document.write(salario *= 1.1);
+    break;
+    case "B":
+    document.write(salario *= 1.15);
+    break;
+    case "C":
+    document.write(salario *= 1.2);
+    break;
+    default:
+    document.write("Digite um valor válido");
+    break;
+}
 
     </script>
     

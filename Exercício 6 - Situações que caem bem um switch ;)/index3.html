@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Desafio :
+3.O cardápio de uma lancheria é o seguinte:
+
+Especificação Código Preço
+Cachorro quente 100 1.20
+Bauru simples 101 1.30
+Bauru com ovo 102 1.50
+Hambúrger 103 1.20
+Cheeseburguer 104 1.30
+Refrigerante 105 1.00
+
+
+Implemente um programa que leia o código do item pedido, a quantidade e calcule o valor a ser pago por aquele lanche. Considere que a cada execução somente será calculado um item. -->
+
+    <script type="text/javascript">
+
+var quantidade = prompt("Quantos lanches serão?");
+var codigo = prompt("Qual o código do lanche?");
+
+
+
+switch(codigo){
+    case "100":
+    document.write("O valor total pago por esse pedido será de R$ ", quantidade *= 1.2);
+    break;
+    case "101":
+    document.write(quantidade *= 1.3);
+    break;
+    case "102":
+    document.write(quantidade *= 1.5);
+    break;
+    case "103":
+    document.write(quantidade *= 1.2);
+    break;
+    case "104":
+    document.write(quantidade *= 1.3);
+    break;
+    case "105":
+    document.write(quantidade *= 1);
+    break;
+    default:
+    document.write("Digite um código válido");
+    break;
+}
+
+    </script>
+    
+</body>
+</html>

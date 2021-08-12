@@ -221,9 +221,82 @@
 
 
 
-//.reduce() reduz o conteúdo de um array para um único elemento
+// //.reduce() reduz o conteúdo de um array para um único elemento
 
-var numeros = [10, 15, 25, 3, 12, 1, 99];
+// var numeros = [10, 15, 25, 3, 12, 1, 99];
             
-var total = numeros.reduce((total, elementos) => total + elementos)
-document.write(total);
+// var total = numeros.reduce((total, elementos) => total + elementos)
+// document.write(total);
+
+
+// .sort() organiza o array de forma alfabética apenas
+
+// var numeros =["Maria", "Joao", "Katia", "Marcos", "Fabio"];
+// numeros.sort();
+// document.write(numeros);
+
+
+// .reverse() inverte a ordem dos elementos do array
+
+// var myArray = ['one', 'two', 'three'];
+// myArray.reverse();
+
+// document.write(myArray) 
+
+
+
+
+
+// Exercicio dado pelo Felipe
+
+
+// var datetime = [], data = [], hora = [];
+// datetime[0] = "01/10/1980 14:05:10";
+// datetime[1] = "20/05/2000 18:00:59";
+// datetime[2] = "1/4/21 20:00";
+
+//             for (i = 0; i < datetime.length; i++) {
+//                 data.push(datetime[i].slice(0, datetime[i].indexOf(" ")));
+//                 hora.push(datetime[i].slice(datetime[i].indexOf(" ") + 1, datetime[i].length));
+//             }
+
+//             for (i = 0; i < datetime.length; i++) {
+//                 document.write("Antes ", datetime[i], "<br>");
+//                 document.write("Depois: data: ", data[i], " hora: ", hora[i], "<br> <br>");
+//             }
+
+
+
+
+// Colocar a primeira letra do texto em maiuscula de acordo com a tabela unicode
+// function capitaliza(nome){
+//     var nome_capitalizado, codigo=32;
+//     // document.write("letra: ", nome[0], " codigo ", nome.charCodeAt(0), " capitalizada: ", String.fromCharCode(nome.charCodeAt(0)-codigo))
+//     aux = nome[0]
+//     nome_capitalizado = nome.replace('f', 'F')
+//     return nome_capitalizado;
+// }
+
+// var nome = "felipe soares barbosa"
+
+// function capitaliza(nome) {
+//     var nome_capitalizado, codigo = 32;
+
+//     aux = nome[0]
+//     nome_capitalizado = nome.replace(aux, aux.toUpperCase())
+
+//     return nome_capitalizado;
+// }
+
+// document.write(capitaliza(nome))
+
+
+
+// For para array
+// var numeros = [5,2,3];
+
+// for (i in numeros){
+//     document.write(numeros[i], "/")
+// }
+
+

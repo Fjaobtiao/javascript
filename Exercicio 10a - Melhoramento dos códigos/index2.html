@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// 2.Crie uma função que recebe o ano de nascimento da pessoa informando se ela é maior de idade(18 anos acima) ou menor (considere 2021) .Controle : o usuário não pode digitar idade negativa ou acima de 130 anos por exemplo
+
+var ano = 0, idade = 0;
+
+ano = parseInt(prompt("Digite o ano do seu nascimento "));
+
+function maioridade (val1) {
+    idade = 2021 - val1
+    if(idade < 0) {
+        return "Impossível inserir um valor negativo"
+    } else if(idade < 18){
+        return "Parabéns, voCê é maior de idade"
+    } else if(idade >= 18 && idade < 131){
+        return "Você ainda é menor de idade"
+    } else if (idade >= 130) {
+        return "Sério?! Mais de 130 anos?"
+    }
+    console.log("val1", val1, "idade", idade)
+}
+
+    document.write(maioridade(ano),".")
+
+    </script>
+</body>
+</html>

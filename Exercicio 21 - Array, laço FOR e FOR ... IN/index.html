@@ -8,17 +8,31 @@
 </head>
 <body>
 
-    <!-- Sua  professora, encomendou um trabalho para você.
+    <script>
+        /* Sua professora, encomendou um trabalho para você.
+        Ela quer que você crie um script que vai pedir o número de alunos da turma (peça via prompt mesmo).
+        Em seguida, vai perguntar qual foi a nota de cada um deles.
+        No final, seu script deve fornecer a média geral da turma.
+        Use array para armazenar as notas, laço FOR para preencher cada elemento do array e um laço FOR IN para calcular a soma das notas(cálculo necessário para calcular a média).
+        */
+
+        
+            var alunos = parseInt(prompt("Quantos alunos tem na turma?"));
+            var vetor = new Array(alunos);
+
+            for (count = 0; count < alunos; count++)
+                vetor[count] = parseInt(prompt("Nota dos alunos " + (count + 1) + ":"))
+
+            var soma = 0;
+            for (count in vetor)
+                soma += vetor[count];
+
+            var media = soma/alunos;
+                document.write("Media da turma: " + media);
 
 
-Ela quer que você crie um script que vai pedir o número de alunos da turma (peça via prompt mesmo).
-Em seguida, vai perguntar qual foi a nota de cada um deles.
+    </script>
 
-
-No final, seu script deve fornecer a média geral da turma.
-
-
-Use array para armazenar as notas, laço FOR para preencher cada elemento do array e um laço FOR IN para calcular a soma das notas (cálculo necessário para calcular a média). -->
 
 <script>
 
