@@ -300,3 +300,64 @@
 // }
 
 
+// Substring - pedaço de uma string
+var texto = "A turma bcw5 é maravilhosa!";
+// textAux = texto.substring(4) // começa o texto na posição 4
+// textAux = texto.substring(8,12) // O primeiro valor começa do zero
+// textAux = texto.substring(15, -4) // o negativo é alterado por zero
+// document.write(textAux);
+
+
+
+
+// .split()
+// stringExemplo = "João da Silva Oliveira";
+// resultado = stringExemplo.split(" "); ele 'quebra' o texto sem espaços
+// resultado = stringExemplo.split(" ", 3)
+// document.write(resultado);
+
+
+
+
+
+//slice()
+// String retornada: "José da Silva Xavier"
+// nome = "João José da Silva Xavier";
+// nomeResultante = nome.slice(4);
+// nomeResultante = nome.slice(3, 10);
+// nomeResultante2 = nome.substring(3, 10);
+// document.write(nomeResultante);
+// document.write(nomeResultante2);
+
+// Array retornado: ["Focus", "Jetta"]
+// carros = ["Civic", "Elantra", "Focus", "Jetta", "Cruze", "Corolla"];
+// selecionados = carros.slice(-4, -2);
+
+
+
+// parseInt - analisa um string e retorna um numero inteiro
+//teste = parseInt(7.5) // nesse caso intende-se que esta trabalhando na base decimal
+// parseInt("-F", 16);
+// parseInt("-0F", 16);
+// parseInt("-0XF", 16);
+// parseInt(-15.1, 10)
+// parseInt(" -17", 8);
+// parseInt(" -15", 10);
+// parseInt("-1111", 2);
+// parseInt("-15e1", 10);
+// parseInt("-12", 13);
+// document.write(teste)
+
+
+// .toString - Converte de inteiro para string
+// var num = 15.5;
+// var a = num.toString(); // Base decimal
+// var b = num.toString(2); // Base binaria
+// var c = num.toString(8); // base 8
+// var d = num.toString(16); // Base hexa
+
+// console.log (a, "<br>", b, "<br>", c, "<br>", d, "<br>")
+
+
+
+
