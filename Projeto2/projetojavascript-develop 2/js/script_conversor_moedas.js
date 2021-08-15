@@ -32,7 +32,7 @@ function valida_valor() {
     valor = valor.replace(",", ".");
 
     if (isNaN(valor) || (valor == "")) {
-        document.getElementById("valor").style.backgroundColor = "red"
+        document.getElementById("valor").style.backgroundColor = "lightpink"
         document.getElementById("botao").disabled = true;
     }
     else {
