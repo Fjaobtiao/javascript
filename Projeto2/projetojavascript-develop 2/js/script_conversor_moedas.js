@@ -31,9 +31,10 @@ function valida_valor() {
     valor = document.getElementById("valor").value;
     valor = valor.replace(",", ".");
 
-    if (isNaN(valor) || (valor == "")) {
+    if (isNaN(valor) || valor<=0 || (valor == "")) {
         document.getElementById("valor").style.backgroundColor = "lightpink"
         document.getElementById("botao").disabled = true;
+        alert("Valor inválido!")
     }
     else {
         valor = parseFloat(valor)

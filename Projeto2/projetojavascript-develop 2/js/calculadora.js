@@ -43,7 +43,7 @@ function changeSign(input) {
         input.value = "-" + input.value;
 }
 
-function calcular(form) {
+function compute(form) {
     form.display.value = eval(form.display.value);
 }
 
